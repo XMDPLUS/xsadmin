@@ -1,0 +1,29 @@
+section.content {
+    font-size: $base-font-size;
+    width: -webkit-calc(100% - (#{$content-margin}));
+    width: -calc(100% - (#{$content-margin}));
+
+    img {
+        display: block;
+        margin: 0 auto;
+        //max-width: 100%;
+        width: 100%;
+        vertical-align: middle;
+        border: 2px solid silver;
+        border-radius: 4px;
+    }
+
+    img + em {
+        
+    }
+
+    article {
+        color: #333;
+
+        .post-content {
+            padding: 0 40px;
+            color: #333;
+            line-height: $base-line-height;
+        }
+    }
+}

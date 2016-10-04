@@ -1,7 +1,28 @@
-<html>
-  <head>
-  </head>
-  <body>
-    This is XSAdmin page.
-  </body>
-</html>
+---
+layout: default
+---
+<div class="home">
+    <h2>{{site.index_content[site.active_lang]}}</h2>
+    <ul id="search-results" class="timeline"></ul>
+</div>
+
+<script>
+  window.store = {
+    {% for post in site.posts %}
+      "{{ post.url | slugify }}": {
+        "title": "{{ post.title | xml_escape }}",
+        "author": "{{ post.author | xml_escape }}",
+        "category": "{{ post.category | xml_escape }}",
+        "content": {{ post.content | strip_html | strip_newlines | jsonify }},
+        "url": "{{ post.url | xml_escape }}"
+      }
+      {% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  };
+</script>
+
+<script>
+    window.activeLang = "{% if site.active_lang == site.default_lang %}{% else %}{{site.active_lang}}{% endif %}";
+</script>
+<script type="text/javascript" src="/dist/js/i18n/{{site.active_lang}}.js"></script>
+<script src="{{ "/dist/js/search.js" | prepend: site.baseurl }}"></script>

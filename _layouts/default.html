@@ -1,0 +1,48 @@
+
+<html>
+
+{% include head.html %}
+
+<body class="hold-transition skin-red sidebar-mini">
+    <!-- Site wrapper -->
+    <div class="wrapper">
+
+        {% include header.html %}
+
+        {% include aside.html %}
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Main content -->
+            <section class="content">
+                {{ content }}
+            </section>
+            <!-- /.content -->
+
+        </div>
+
+        {% include footer.html %}
+
+        <div class="control-sidebar-bg"></div>
+
+        <div style="position:fixed; bottom: 60px; right: 60px;">
+            <a class="btn btn-app" href="#">
+                <i class="fa fa-arrow-circle-o-up"></i> TOP
+            </a>
+        </div>
+    </div>
+    <!-- jQuery 2.2.0 -->
+    <script src="{{ "/plugins/jQuery/jQuery-2.2.0.min.js" | prepend: site.baseurl }}"></script>
+    <!-- Bootstrap 3.3.6 -->
+    <script src="{{ "/bootstrap/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+    <!-- SlimScroll -->
+    <script src="{{ "/plugins/slimScroll/jquery.slimscroll.min.js" | prepend: site.baseurl }}"></script>
+    <!-- FastClick -->
+    <script src="{{ "/plugins/fastclick/fastclick.js" | prepend: site.baseurl }}"></script>
+    <!-- <script src="{{ "/dist/js/app.min.js" | prepend: site.baseurl }}"></script> -->
+    <script src="{{ "/dist/js/app.js" | prepend: site.baseurl }}"></script>
+    <!-- <script src="{{ "/dist/js/pages/dashboard2.js" | prepend: site.baseurl }}"></script> -->
+    <!-- <script src="{{ "/dist/js/demo.js" | prepend: site.baseurl }}"></script> -->
+</body>
+
+</html>

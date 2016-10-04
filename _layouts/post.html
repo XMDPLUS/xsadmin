@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="box box-default">
+        <div class="box-header with-border">
+            <h3 class="box-title"><i class="fa fa-map-pin"></i> {{ page.title }}</h3>
+            <p class="pull-right" style="margin:0;"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%Y-%m-%d %H:%M" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+        </div>
+        <div class="box-body">
+            <div class="row">
+                <div class="col-sm-12 post-content" itemprop="articleBody">
+                    {{ content }}
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.box-body -->
+    </div>
+
+</article>

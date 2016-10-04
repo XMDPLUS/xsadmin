@@ -1,0 +1,36 @@
+<!-- Left side column. contains the logo and sidebar -->
+<aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+        <form action="{% if site.active_lang == site.default_lang %} {{site.baseurl}}/ {% else %} {{site.baseurl}}/{{site.active_lang}}/ {% endif %}" method="get" class="sidebar-form">
+            <div class="input-group">
+                <input type="text" id="search-box" name="query" class="form-control" placeholder="Search..." tabindex="0" onfocus="this.value='';">
+                <span class="input-group-btn">
+                    <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                    </button>
+                </span>
+            </div>
+        </form>
+        <!-- /.search form -->
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu">
+            <li class="header">{{site.list_header[site.active_lang]}}</li>
+            {% for cat in site.category[site.active_lang] %}
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-question-circle"></i> <span>{{ cat | replace: '_ja','' | replace: '_zh','' }}</span> <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    {% if site.categories[cat] %}
+                    {% assign posts_in_cat = site.categories[cat] | sort: weight %}
+                    {% for post in posts_in_cat %}
+                    {% if post.title %}<li><a href="{{ post.url | prepend: site.baseurl }}"><i class="fa fa-circle-o"></i> {{ post.title }}</a></li>{% endif %}
+                    {% endfor %}
+                    {% endif %}
+                </ul>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+    <!-- /.sidebar -->
+</aside>

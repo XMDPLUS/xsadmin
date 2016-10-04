@@ -1,0 +1,43 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+logo-prefix: XMD
+logo-suffix: SOHO ADMIN
+title:
+    ko: 도움말
+email: dev@xmd.co.kr
+description:
+    ko: > # XMD SOHO ADMIN 도움말.
+baseurl: "" # the subpath of your site, e.g. /blog
+#url: "http://xmdplus.github.io/xsadmin" # the base hostname & protocol for your site
+url: "http://localhost:4000" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+# kramdown:
+#   input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
+#   hard_wrap: false
+# highlighter: rouge
+
+list_header:
+    ko: 도움말 리스트
+
+index_content:
+    ko: XMD SOHO ADMIN 사용 도움말입니다.
+
+gems:
+    - jekyll-polyglot
+
+languages: ["ko"]
+default_lang: "ko"
+exclude_from_localization: ["javascript", "images", "css", "bootstrap", "dist", "plugins", "_data"]
+parallel_localization: true
+
+category:
+    ko:
+        - 회원사 관리
