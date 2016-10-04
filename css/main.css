@@ -1,0 +1,17 @@
+section.content {
+  font-size: 16px;
+  width: -webkit-calc(100% - (20px));
+  width: -calc(100%-20px); }
+  section.content img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    vertical-align: middle;
+    border: 2px solid silver;
+    border-radius: 4px; }
+  section.content article {
+    color: #333; }
+    section.content article .post-content {
+      padding: 0 40px;
+      color: #333;
+      line-height: 1.5; }
