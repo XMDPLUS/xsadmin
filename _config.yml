@@ -14,7 +14,7 @@ email: dev@xmd.co.kr
 description:
     ko: > # XMD SOHO ADMIN 도움말.
 baseurl: "/xsadmin" # the subpath of your site, e.g. /blog
-url: "http://xmdplus.github.io" # the base hostname & protocol for your site
+url: "https://xmdplus.github.io" # the base hostname & protocol for your site
 #url: "http://localhost:4000" # the base hostname & protocol for your site
 
 # Build settings
@@ -35,6 +35,7 @@ gems:
 
 languages: ["ko"]
 default_lang: "ko"
+active_lang: "ko"
 exclude_from_localization: ["javascript", "images", "css", "bootstrap", "dist", "plugins", "_data"]
 parallel_localization: true
 
