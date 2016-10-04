@@ -13,7 +13,7 @@ weight: 10
 ------------------------
 
 ### <i class="fa fa-pencil-square-o" markdown="1"></i> 기본정보 입력
-![기본정보 입력]({{ site.url }}/images/tenant_setting/tenant_setting_01.png)
+![기본정보 입력]({{ site.url }}/{{ site.baseurl}}/images/tenant_setting/tenant_setting_01.png)
 
 1. 회원사 세팅 메뉴
 좌측메뉴 [회원사 관리] – [회원사 세팅]을 선택합니다.
@@ -29,7 +29,7 @@ weight: 10
 ------------------------
 
 ### <i class="fa fa-pencil-square-o" markdown="1"></i> 세팅정보 입력
-![세팅정보 입력]({{ site.url }}/images/tenant_setting/tenant_setting_02.png)
+![세팅정보 입력]({{ site.url }}/{{ site.baseurl}}/images/tenant_setting/tenant_setting_02.png)
 
 1. 세팅항목 #1
 
@@ -61,7 +61,7 @@ weight: 10
 ------------------------
 
 ### <i class="fa fa-pencil-square-o" markdown="1"></i> 세팅완료
-![세팅완료]({{ site.url }}/images/tenant_setting/tenant_setting_03.png)
+![세팅완료]({{ site.url }}/{{ site.baseurl }}/images/tenant_setting/tenant_setting_03.png)
 
 1. 회원사 등록 요청
 * 모든 정보를 입력한후 회원사 등록 요청 버튼을 클릭하면 즉시 세팅이 완료되는 것은 아니고 최대 1분정도 세팅하는 시간이 필요합니다. 회원사 등록 요청 버튼을 클릭하면 본 화면은 종료되고 회원사 목록 화면이 표시됩니다.
@@ -69,7 +69,7 @@ weight: 10
 ------------------------
 
 ### <i class="fa fa-pencil-square-o" markdown="1"></i> 회원사 목록
-![회원사 목록]({{ site.url }}/images/tenant_setting/tenant_setting_04.png)
+![회원사 목록]({{ site.url }}/{{ site.baseurl }}/images/tenant_setting/tenant_setting_04.png)
 
 1. 회원사 세팅에 시간이 소요될수 있기 때문에 좀전에 세팅요청을 한 회원사는 세팅상태가 ‘세팅중’으로 표시될 수 있습니다. 
 2. 회원사 세팅을 확인하기 위해서 ‘세팅중’으로 표시된 회원사가 있다면 검색버튼을 클릭해서 세팅상태 변경여부를 확인할 수 있습니다.

@@ -13,7 +13,7 @@ weight: 10
 ------------------------
 
 ### <i class="fa fa-pencil-square-o" markdown="1"></i> 회원사 관리
-![회원사 관리]({{ site.url }}/images/tenant_manage/tenant_manage_01.png)
+![회원사 관리]({{ site.url }}/{{ site.baseurl }}/images/tenant_manage/tenant_manage_01.png)
 
 1. 회원사 관리 메뉴
 * [회원사 관리] – [회원사 관리] 메뉴를 클릭합니다.
